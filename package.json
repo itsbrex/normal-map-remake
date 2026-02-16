@@ -1,0 +1,77 @@
+{
+  "name": "normal-map-remake",
+  "version": "1.0.0",
+  "description": "Online normal map generator - create normal maps, displacement maps, ambient occlusion, and specular maps directly in your browser",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "shadcn:init": "shadcn init",
+    "shadcn:add": "shadcn add",
+    "shadcn:add:all": "shadcn add --all",
+    "shadcn:update": "shadcn add --all --overwrite"
+  },
+  "keywords": [
+    "normal-map",
+    "texture-generator",
+    "three.js",
+    "webgl"
+  ],
+  "author": "Christian Petry",
+  "contributors": [
+    {
+      "name": "Brian Roach",
+      "url": "https://github.com/itsbrex"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@base-ui/react": "^1.2.0",
+    "@hookform/resolvers": "^5.2.2",
+    "@react-three/drei": "^10.7.7",
+    "@react-three/fiber": "^9.5.0",
+    "@tailwindcss/postcss": "^4.1.18",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cmdk": "^1.1.1",
+    "date-fns": "^4.1.0",
+    "embla-carousel-react": "^8.6.0",
+    "file-saver": "^2.0.5",
+    "input-otp": "^1.4.2",
+    "lucide-react": "^0.564.0",
+    "next": "^16.1.6",
+    "next-themes": "^0.4.6",
+    "radix-ui": "^1.4.3",
+    "react": "^19.2.4",
+    "react-day-picker": "^9.13.2",
+    "react-dom": "^19.2.4",
+    "react-hook-form": "^7.71.1",
+    "react-resizable-panels": "^4",
+    "recharts": "2.15.4",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.4.1",
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.182.0",
+    "vaul": "^1.1.2",
+    "zod": "^4.3.6",
+    "zustand": "^5.0.11"
+  },
+  "devDependencies": {
+    "@next/eslint-plugin-next": "^16.1.6",
+    "@types/file-saver": "^2.0.7",
+    "@types/node": "^25.2.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/three": "^0.182.0",
+    "autoprefixer": "^10.4.24",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.1.6",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.56.0"
+  }
+}
