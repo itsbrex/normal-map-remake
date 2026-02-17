@@ -29,7 +29,8 @@ export const metadata: Metadata = {
     "three.js",
   ],
   authors: [
-    { name: "Christian Petry", url: "https://www.petry-christian.de" },
+    { name: "Christian Petry", url: "https://github.com/cpetry" },
+    { name: "itsbrex", url: "https://github.com/itsbrex" },
   ],
   openGraph: {
     title: "NormalMap-Online | Free Normal Map Generator",

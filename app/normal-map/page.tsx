@@ -31,7 +31,7 @@ import {
   AmbientOcclusionControls,
   SpecularControls,
 } from "@/components/controls";
-import { ModeSelector, ExportControls, BatchProcessing, ThemeToggle } from "@/components/layout";
+import { ModeSelector, ExportControls, BatchProcessing, ThemeToggle, CornerBanner } from "@/components/layout";
 import { useTextureStore, TextureType, useLoading } from "@/stores/textureStore";
 import { useTextureGeneration } from "@/hooks/useTextureGeneration";
 import { exportCanvas, exportAllCanvases } from "@/lib/utils/fileExport";
@@ -171,6 +171,9 @@ export default function NormalMapPage() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      {/* Corner Banner */}
+      <CornerBanner />
+
       {/* Header */}
       <header className="border-b sticky top-0 bg-background z-50">
         <div className="container mx-auto px-4 h-14 flex items-center justify-between">
@@ -428,16 +431,28 @@ export default function NormalMapPage() {
       <footer className="border-t mt-auto">
         <div className="container mx-auto px-4 py-4">
           <p className="text-xs text-muted-foreground text-center">
-            NormalMap-Online by{" "}
+            Original project by{" "}
             <a
-              href="https://www.petry-christian.de"
+              href="https://github.com/cpetry"
               className="underline hover:text-foreground"
               target="_blank"
               rel="noopener noreferrer"
             >
               Christian Petry
             </a>{" "}
-            | MIT License | Modern remake with Next.js & React
+            | MIT License
+          </p>
+          <p className="text-xs text-muted-foreground text-center mt-1">
+            Refactored by{" "}
+            <a
+              href="https://github.com/itsbrex/normal-map-remake"
+              className="underline hover:text-foreground"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              itsbrex
+            </a>{" "}
+            with ❤️ and 👽
           </p>
         </div>
       </footer>

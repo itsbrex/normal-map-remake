@@ -2,11 +2,14 @@ import Link from "next/link";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Layers, Grid3X3, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/layout";
+import { ThemeToggle, CornerBanner } from "@/components/layout";
 
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
+      {/* Corner Banner */}
+      <CornerBanner />
+
       {/* Header */}
       <header className="border-b sticky top-0 bg-background z-50">
         <div className="container mx-auto px-4 h-14 flex items-center justify-between">
@@ -15,19 +18,21 @@ export default function Home() {
             <ThemeToggle />
             <Button variant="ghost" size="sm" asChild className="hidden sm:inline-flex">
               <a
-                href="https://github.com/nickyvanurk/normalmap-online"
+                href="https://github.com/cpetry/NormalMap-Online"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Original repository by cpetry (Christian Petry)"
               >
                 <ExternalLink className="h-4 w-4 mr-2" />
-                GitHub
+                Original Repo
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild className="sm:hidden">
               <a
-                href="https://github.com/nickyvanurk/normalmap-online"
+                href="https://github.com/cpetry/NormalMap-Online"
                 target="_blank"
                 rel="noopener noreferrer"
+                title="Original repository"
               >
                 <ExternalLink className="h-4 w-4" />
               </a>
@@ -126,14 +131,26 @@ export default function Home() {
           <p className="text-xs text-muted-foreground text-center">
             Original project by{" "}
             <a
-              href="https://www.petry-christian.de"
+              href="https://github.com/cpetry"
               className="underline hover:text-foreground"
               target="_blank"
               rel="noopener noreferrer"
             >
               Christian Petry
             </a>{" "}
-            | MIT License | Modern remake with Next.js & React
+            | MIT License
+          </p>
+          <p className="text-xs text-muted-foreground text-center mt-1">
+            Refactored by{" "}
+            <a
+              href="https://github.com/itsbrex/normal-map-remake"
+              className="underline hover:text-foreground"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              itsbrex
+            </a>{" "}
+            with ❤️ and 👽
           </p>
         </div>
       </footer>

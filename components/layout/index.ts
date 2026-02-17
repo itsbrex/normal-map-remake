@@ -16,3 +16,6 @@ export type { BatchProcessingProps } from "./BatchProcessing";
 
 export { ThemeToggle } from "./ThemeToggle";
 export type { ThemeToggleProps } from "./ThemeToggle";
+
+export { CornerBanner } from "./CornerBanner";
+export type { CornerBannerPropsType as CornerBannerProps } from "./CornerBanner";
