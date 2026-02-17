@@ -12,7 +12,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://normalmap-online.vercel.app"
+    process.env.NEXT_PUBLIC_SITE_URL || "https://normal-map-remake.vercel.app"
   ),
   title: "NormalMap-Online | Free Normal Map Generator",
   description:
@@ -39,12 +39,22 @@ export const metadata: Metadata = {
     siteName: "NormalMap-Online",
     type: "website",
     locale: "en_US",
+    url: "https://normal-map-remake.vercel.app",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "NormalMap-Online - Free browser-based normal map generator",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "NormalMap-Online | Free Normal Map Generator",
     description:
       "Create normal maps, displacement maps, ambient occlusion, and specular maps directly in your browser. No uploads required, completely client-based.",
+    images: ["/og-image.png"],
   },
 };
 
