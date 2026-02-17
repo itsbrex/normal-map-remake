@@ -188,7 +188,7 @@ export default function TextureGeneratorPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       {/* Header */}
       <header className="border-b sticky top-0 bg-background z-50">
         <div className="container mx-auto px-4 h-14 flex items-center justify-between">
@@ -209,7 +209,7 @@ export default function TextureGeneratorPage() {
       </header>
 
       {/* Main Content */}
-      <main id="main-content" className="container mx-auto px-4 py-4 sm:py-6">
+      <main id="main-content" className="container mx-auto px-4 py-4 sm:py-6 flex-1">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 sm:gap-6">
           {/* Left Panel - Texture Type Selection */}
           <div className="lg:col-span-3 space-y-4">
